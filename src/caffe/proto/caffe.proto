@@ -509,6 +509,7 @@ message DataParameter {
 // Message that stores parameters used by DropoutLayer
 message DropoutParameter {
   optional float dropout_ratio = 1 [default = 0.5]; // dropout ratio
+  optional bool sample_weights_test = 2 [default = false]; // Sample weights for testing or use the mean 
 }
 
 // Message that stores parameters used by DummyDataLayer.
